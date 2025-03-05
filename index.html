@@ -1,10 +1,9 @@
 <html>
 <head>
-<title>yww</title>
+<title>产品描述</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 </head>
 <body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
-<!-- Save for Web Slices (yww.psd) -->
 <table id="__01" border="0" cellpadding="0" cellspacing="0">
 	<tr>
 		<td>
@@ -27,36 +26,6 @@
 			<img src="images/yww_05.png" width="100%" alt="" /></td>
 	</tr>
 </table>
-	<script>
-        
-        const encryptedUrls = [
-            '##',
-            '##',
-            '##',
-            '##',
-            '##'
-        ];
-        function base64Decode(base64) {
-            return atob(base64); 
-        }
-        function downloadFile(encodedUrl) {
-            const url = base64Decode(encodedUrl); 
-            const link = document.createElement('a');
-            link.href = url;
-            link.download = ''; 
-            document.body.appendChild(link); 
-            link.click(); 
-            document.body.removeChild(link); 
-        }
-        
-        const images = document.querySelectorAll('img');
-        images.forEach((img, index) => {
-            img.addEventListener('click', () => {
-                const encodedUrl = encryptedUrls[index]; 
-                downloadFile(encodedUrl); 
-            });
-        });
-    </script> 
 
 </body>
 </html>
